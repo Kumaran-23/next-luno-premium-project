@@ -9,7 +9,8 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
-    "node-binance-api": "^0.13.1"
+    "node-binance-api": "^0.13.1",
+    "prompt-sync": "^4.2.0"
   },
   "description": ""
 }
