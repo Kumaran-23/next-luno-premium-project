@@ -7,7 +7,7 @@ import { exchangeRate } from './lib/exchange-rate.js';
 import { lunoPriceUSD, priceDiff, lunoPremium } from './lib/utils.js';
 
 
-async function lunoResult() {
+export async function lunoResult() {
     let lunoMYRPrice = await lunoPriceMYR();
     let exRate = await exchangeRate();
     let lunoUSDPrice = await lunoPriceUSD(lunoMYRPrice, exRate);
@@ -23,5 +23,5 @@ async function lunoResult() {
 
 }
 
-lunoResult();
+//lunoResult();
 
