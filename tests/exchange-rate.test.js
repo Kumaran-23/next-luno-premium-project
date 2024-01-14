@@ -15,5 +15,5 @@ test("Returns error message if conversion rate not retrivable", async () => {
         status: MOCK_STATUS,
         json: () => {}
     }));
-    expect(await exchangeRate()).toBe("Failed to get conversion rate");
+    expect(await exchangeRate()).toBe("Failed to retrive exchange rate at this time, please try again");
 })

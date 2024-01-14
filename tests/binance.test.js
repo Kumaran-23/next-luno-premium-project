@@ -24,9 +24,9 @@ test("Returns error message if price not recieved", async () => {
     jest.mock('node-binance-api', () => {
         return class Binance {
             prices() {
-                return new Promise(res => res("Price not retrivable"))
+                return new Promise(res => res("Binance price not retrivable at this time, please try again"))
             }
         }
     })
-    expect(await binancePriceUSD()).toBe("Price not retrivable");
+    expect(await binancePriceUSD()).toBe("Binance price not retrivable at this time, please try again");
 })
